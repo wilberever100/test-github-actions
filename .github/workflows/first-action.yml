@@ -1,0 +1,17 @@
+name: First Workflow
+
+# When to e executed;
+#workflow_dispatch: Make sure we can manually trigger this workflow
+on: workflow_dispatch
+
+jobs:
+  #name of the job:
+  first-job:
+    #Runner
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello World"
+      - name: Print Goodbye
+        run: echo "Done -bye"
+      
