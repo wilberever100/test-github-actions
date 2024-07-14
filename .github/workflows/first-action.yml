@@ -11,7 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print greeting
-        run: echo "Hello World"
+        run: |
+          echo "Hello Earth"
+          echo "Hello Mars "
       - name: Print Goodbye
         run: echo "Done -bye"
       
